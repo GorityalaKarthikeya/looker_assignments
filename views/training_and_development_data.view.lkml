@@ -35,6 +35,7 @@ view: training_and_development_data {
   dimension: training_program_name {
     type: string
     sql: ${TABLE}.Training_Program_Name ;;
+    drill_fields: [training_duration_days_ , training_outcome , training_type ,training_cost , trainer]
   }
   dimension: training_type {
     type: string

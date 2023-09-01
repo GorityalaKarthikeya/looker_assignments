@@ -24,6 +24,7 @@ view: recruitment_data {
     type: string
     map_layer_name: countries
     sql: ${TABLE}.Country ;;
+    drill_fields: [state , city]
   }
   dimension_group: date_of_birth {
     type: time
