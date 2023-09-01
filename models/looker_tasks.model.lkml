@@ -31,6 +31,11 @@ explore: employee_engagement_survey_data {
     sql_on: ${employee_engagement_survey_data.employee_id} = ${training_and_development_data.employee_id} ;;
     relationship: one_to_one
   }
+  join: recruitment_data {
+    type: inner
+    sql_on: ${employee_engagement_survey_data.employee_id} = ${recruitment_data.applicant_id};;
+    relationship: one_to_one
+  }
 }
 
 explore: sales {}
