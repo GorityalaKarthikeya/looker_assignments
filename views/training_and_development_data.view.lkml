@@ -17,14 +17,6 @@ view: training_and_development_data {
       url: "https://springmllook.cloud.looker.com/dashboards/76/location={value}"
     }
   }
-  measure: previous_cost {
-    type: sum
-    sql: ${training_cost} ;;
-  }
-  measure: present_cost {
-    type: sum
-    sql: ${training_cost} ;;
-  }
   dimension: training_cost {
     type: number
     sql: ${TABLE}.Training_Cost ;;
