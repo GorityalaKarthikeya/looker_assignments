@@ -8,14 +8,14 @@ view: training_and_development_data {
   dimension: location {
     type: string
     sql: ${TABLE}.Location ;;
-  }
-  dimension: trainer {
-    type: string
-    sql: ${TABLE}.Trainer ;;
     link: {
       label: "Location"
       url: "https://springmllook.cloud.looker.com/dashboards/76/location={value}"
     }
+  }
+  dimension: trainer {
+    type: string
+    sql: ${TABLE}.Trainer ;;
   }
   dimension: training_cost {
     type: number
