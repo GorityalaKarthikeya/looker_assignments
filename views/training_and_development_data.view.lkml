@@ -10,7 +10,7 @@ view: training_and_development_data {
     sql: ${TABLE}.Location ;;
     link: {
       label: "Location"
-      url: "https://springmllook.cloud.looker.com/dashboards/76/?location={{value}}"
+      url: "https://springmllook.cloud.looker.com/dashboards/76?location={{value}}"
     }
   }
   dimension: trainer {
